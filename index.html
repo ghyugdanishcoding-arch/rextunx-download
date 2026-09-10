@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#050812">
+<title>DANZZ STORE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:#f3f8ff;font-family:Inter,Arial,sans-serif;background:#030610;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 10% 0,#006dca66,transparent 32%),radial-gradient(circle at 90% 20%,#003a9860,transparent 28%),radial-gradient(circle at 50% 100%,#007bc533,transparent 35%)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.35;background-image:linear-gradient(#fff1 1px,transparent 1px),linear-gradient(90deg,#fff1 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 85%)}
+.wrap{width:min(1100px,92%);margin:auto}.glass{background:linear-gradient(135deg,#10274680,#061020a8);border:1px solid #7acbff1c;box-shadow:0 24px 70px #0008,inset 0 1px #ffffff10;backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+nav{position:sticky;top:12px;z-index:20;margin:12px auto;width:min(1100px,92%);padding:11px 15px;border-radius:19px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:900}.brandicon{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#008cff,#69e5ff);color:#00111e;box-shadow:0 0 30px #008cff55}.navlinks a{color:#91a8c5;text-decoration:none;font-size:13px;margin-left:20px;font-weight:700}.navlinks a:hover{color:white}
+.hero{text-align:center;padding:82px 0 52px}.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid #2cbaff35;background:#12aaff0e;border-radius:99px;padding:8px 13px;color:#7fddff;font-size:11px;font-weight:800}.pulse{width:7px;height:7px;border-radius:50%;background:#38ed91;box-shadow:0 0 14px #38ed91;animation:p 1.5s infinite}@keyframes p{50%{opacity:.3}}
+h1{font-size:clamp(48px,10vw,90px);letter-spacing:-5px;line-height:.9;margin:22px 0 16px;background:linear-gradient(115deg,#fff,#7ee5ff,#168cff);color:transparent;-webkit-background-clip:text}.hero p{max-width:670px;margin:auto;color:#91a6c1;line-height:1.7;font-size:14px}.buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 18px;border-radius:14px;text-decoration:none;font-size:13px;font-weight:800;border:1px solid #75cfff25;color:white}.primary{background:linear-gradient(135deg,#078cff,#12c6f4);color:#00121d;box-shadow:0 12px 35px #008cff3b}.secondary{background:#ffffff08}
+.appbutton{width:22px;height:22px;object-fit:contain;display:block}
+section{padding:42px 0}.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:18px}.head h2{margin:0;font-size:27px}.head span{font-size:11px;color:#7188a5}
+.product{border-radius:27px;padding:22px;display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center}.apklogo{width:82px;height:82px;border-radius:23px;padding:15px;background:linear-gradient(145deg,#061b3a,#0879ce);border:1px solid #64d6ff38;box-shadow:0 0 40px #008cff25}.apklogo img{width:100%;height:100%;object-fit:contain}.product h3{font-size:21px;margin:0 0 7px}.product p{margin:0;color:#91a6c1;font-size:12px;line-height:1.65}.chips{margin-top:11px;display:flex;gap:7px;flex-wrap:wrap}.chip{padding:5px 8px;border-radius:7px;background:#11aaff0e;border:1px solid #23b9ff24;color:#73dfff;font-size:10px;font-weight:700}.buy{text-align:right}.price{font-size:26px;font-weight:900}.buy small{display:block;color:#7087a4;font-size:10px;margin-bottom:4px}.download{margin-top:10px}
+.roles{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.role{padding:20px;border-radius:22px}.roleicon{font-size:28px;color:#69ddff}.role h3{margin:11px 0 3px}.cost{font-size:24px;font-weight:900}.role p{min-height:60px;color:#8fa4bf;font-size:11px;line-height:1.65}.role .btn{width:100%}.owner{border-color:#25baff44;background:linear-gradient(145deg,#0d416788,#06102099)}
+.info{border-radius:22px;padding:20px;display:flex;gap:13px;color:#9bb0c8;font-size:11px;line-height:1.7}.info .material-icons-round{color:#64dcff}
+footer{text-align:center;color:#607792;font-size:11px;padding:35px 0 55px}
+@media(max-width:720px){.navlinks{display:none}.product{grid-template-columns:auto 1fr}.buy{grid-column:1/-1;text-align:left}.roles{grid-template-columns:1fr 1fr}.head{display:block}.head span{display:block;margin-top:7px}}
+@media(max-width:430px){.roles{grid-template-columns:1fr}h1{letter-spacing:-3px}}
+</style>
+</head>
+<body>
+<nav class="glass">
+  <div class="brand"><div class="brandicon"><span class="material-icons-round">bolt</span></div>DANZZ STORE</div>
+  <div class="navlinks"><a href="#produk">Produk</a><a href="#role">Role</a><a href="#kontak">Kontak</a></div>
+</nav>
+
+<main class="wrap">
+<section class="hero">
+  <div class="eyebrow"><i class="pulse"></i> DANZZ STORE • ONLINE</div>
+  <h1>DANZZ<br>STORE</h1>
+  <p>Digital product &amp; app store dengan tampilan modern. Cek produk, spesifikasi, harga, lalu langsung chat untuk order.</p>
+  <div class="buttons">
+    <a class="btn primary" href="https://wa.me/6285113656295?text=Halo%20DANZZ%20STORE%2C%20saya%20mau%20order." target="_blank">
+      <img class="appbutton" src="https://cdn.simpleicons.org/whatsapp/00121d" alt="WhatsApp"> WhatsApp
+    </a>
+    <a class="btn secondary" href="https://t.me/danzzstorejtm" target="_blank">
+      <img class="appbutton" src="https://cdn.simpleicons.org/telegram/69ddff" alt="Telegram"> Telegram
+    </a>
+  </div>
+</section>
+
+<section id="produk">
+<div class="head"><h2>🔥 New Release</h2><span>APK • PRODUCT DETAILS</span></div>
+<article class="product glass">
+  <div class="apklogo"><img src="https://cdn-icons-png.flaticon.com/512/888/888839.png" alt="APK icon"></div>
+  <div>
+    <h3>REXTUN'X X RAT</h3>
+    <p>Aplikasi parental control remote access trojan (RAT).</p>
+    <div class="chips"><span class="chip">APK</span><span class="chip">Android</span><span class="chip">Support</span><span class="chip">Digital Access</span></div>
+  </div>
+  <div class="buy"><small>HARGA MULAI</small><div class="price">10K</div>
+    <!-- GANTI URL DI BAWAH DENGAN LINK MEDIAFIRE APK ASLI -->
+    <a class="btn primary download" href="https://www.mediafire.com/file/29awu0j1ddt3iee/base.apk/file" target="_blank"><span class="material-icons-round">download</span> Download APK</a>
+  </div>
+</article>
+</section>
+
+<section id="role">
+<div class="head"><h2>💎 Pilih Role</h2><span>BENEFIT SESUAI PAKET</span></div>
+<div class="roles">
+<article class="role glass"><span class="material-icons-round roleicon">person</span><h3>MEMBER</h3><div class="cost">10K</div><p>✓ Cuma bisa pakai APK<br>✕ Tidak bisa jual role</p><a class="btn secondary" href="https://wa.me/6285113656295?text=Saya%20mau%20Role%20MEMBER%2010K" target="_blank">Order</a></article>
+<article class="role glass"><span class="material-icons-round roleicon">storefront</span><h3>RESELLER</h3><div class="cost">15K</div><p>✓ Bisa pakai APK<br>✓ Bisa jual APK Member</p><a class="btn secondary" href="https://wa.me/6285113656295?text=Saya%20mau%20Role%20RESELLER%2015K" target="_blank">Order</a></article>
+<article class="role glass"><span class="material-icons-round roleicon">workspace_premium</span><h3>VIP</h3><div class="cost">25K</div><p>✓ Bisa pakai APK<br>✓ Bisa jual Reseller &amp; Member</p><a class="btn secondary" href="https://wa.me/6285113656295?text=Saya%20mau%20Role%20VIP%2025K" target="_blank">Order</a></article>
+<article class="role owner glass"><span class="material-icons-round roleicon">admin_panel_settings</span><h3>OWNER</h3><div class="cost">60K</div><p>✓ All access sesuai paket<br>✓ Bisa jual semua role kecuali Dev<br>🎁 Benefit Telegram khusus</p><a class="btn primary" href="https://wa.me/6285113656295?text=Saya%20mau%20Role%20OWNER%2060K" target="_blank">Order Owner</a></article>
+</div>
+</section>
+
+<section id="kontak"><div class="info glass"><span class="material-icons-round">verified_user</span><div><b>Catatan:</b> fitur remote-access/security testing hanya boleh digunakan dengan izin. Jangan gunakan untuk mengambil data, menyadap, atau mengakses perangkat/akun orang lain tanpa otorisasi.</div></div></section>
+</main>
+
+<footer>DANZZ STORE • WhatsApp 0851-1365-6295 • Telegram @danzzstorejtm</footer>
+</body>
+  </html>
